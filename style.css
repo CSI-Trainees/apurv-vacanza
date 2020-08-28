@@ -24,15 +24,15 @@ section { display: flex; padding-bottom: 150px; }
 
 .leftside { width: 45%; height: auto; overflow: hidden; margin-top: 20px; }
 
-.leftside img { width: 370px; height: 370px; padding-left: 30px; padding-top: 10px; border-radius: 20px; }
+.leftside img { width: 370px; height: 360px; padding-left: 30px; padding-top: 10px; border-radius: 20px; }
 
-.rightside { width: 55%; height: 350px; color: black; text-align: center; margin-top: 80px; padding: 40px; padding-top: 110px; }
+.rightside { width: 50%; height: 480px; color: black; text-align: center; margin-top: 60px; padding: 40px; padding-top: 80px; background: white; opacity: 80%; border-radius: 50px; box-shadow: 5px 5px 15px rgba(0,0,0,0.9); }
 
 .rightside h1 { font-size: 50px; font-weight: 900; margin-left: 50px;}
 
 .rightside p { font-size: 1.2rem; padding: 30px 0; margin-left: 50px;}
 
-.rightside button { font-size: 17px; font-weight: bold; border-color: black; margin-left: 50px; color: black; background: transparent; border-radius: 40px; padding: 12px 18px;}
+.rightside button { font-size: 17px; font-weight: bold; border-color: black; margin-left: 50px; color: black; background: transparent; border-radius: 40px; padding: 12px 18px; }
 
 .rightside button:hover { color: white; background: rgb(25, 133, 109); }
 
@@ -82,7 +82,57 @@ section { display: flex; padding-bottom: 150px; }
 }
 
 .card-text button { font-size: 15px; font-weight: bold; border-color: black; color: whitesmoke; background: rgb(25, 133, 109); border-radius: 8px; padding: 12px 18px; }
+
 .card:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
+  .footer { 
+      background-image: url("/images/footer.png");
+      height: 200px;
+      width: 100%;
+      color: white;
+      position: relative;
+  }
+
+  .footer-bottom {
+      text-align: center;
+      height: 40px;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 8px;
+      background: rebeccapurple;
+  }
+
+  .footer-content h2 {
+      padding-top: 10px;
+      margin-left: 20px;
+      text-decoration-line: underline;
+  }
+
+  .footer-content p {
+      text-align: center;
+      margin-left: 30px;
+  }
+
+   .contacts { 
+      display: block;
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 1px;
+  }
+
+  .links {
+      text-align: center;
+      font-size: 25px;
+  }
+
+  .fa {
+    padding: 13px;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
   }
