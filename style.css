@@ -1,4 +1,4 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth;}
 
 .site-headers {
     background-image: url("images/background.png");
@@ -8,9 +8,9 @@
     height: 100%;
 }
 nav{
-    width: 100%; height: 100px; background: rgb(25, 133, 109); display: flex; color: white;
+    width: 100%; height: 100px; background: rgb(25, 133, 109); display: flex; color: white; position: fixed; z-index: 15;
 }
-.logo { width: 50%; height: 100px; }
+.logo { width: 50%; height: 100px; letter-spacing: 5px; }
 
 .logo h1{ line-height: 100px; padding-left: 55px;}
 
@@ -18,23 +18,27 @@ nav{
 
 .menu ul { width: 100%; height: 100px; display: flex; flex-direction: row; justify-content: space-around; align-items: center;}
 
-.menu ul li { list-style: none; font-size: 14px; font-weight: bold;}
+.menu ul li { list-style: none; font-size: 15px; font-weight: bold; letter-spacing: 2px;}
 
-section { display: flex; padding-bottom: 150px; }
+.menu ul li a { text-decoration: none; color: white;}
 
-.leftside { width: 45%; height: auto; overflow: hidden; margin-top: 20px; }
+.menu ul li :hover { color: black; transition: 0.4s ease;}
 
-.leftside img { width: 330px; height: 335px; margin-left: 30px; margin-top: 120px; border-radius: 100%; box-shadow: 5px 5px 15px rgba(0,0,0,0.9);}
+section { display: flex; padding-bottom: 180px; }
 
-.rightside { width: 50%; height: 460px; color: black; text-align: center; margin-top: 100px; padding: 40px; padding-top: 50px; background: white; opacity: 80%; border-radius: 50px; border-style: solid; box-shadow: 5px 5px 15px rgba(0,0,0,0.9);}
+.leftside { width: 45%; height: auto; overflow: hidden; margin-top: 100px; }
 
-.rightside h1 { font-size: 50px; font-weight: 900; margin-left: 20px;}
+.leftside img { width: 330px; height: 335px; margin-left: 30px; margin-top: 110px; border-radius: 100%; box-shadow: 5px 5px 15px rgba(0,0,0,0.9);}
+
+.rightside { width: 51%; height: 450px; color: black; text-align: center; margin-top: 160px; padding: 40px; padding-top: 50px; background: white; opacity: 80%; border-radius: 50px; border-style: solid; box-shadow: 5px 5px 15px rgba(0,0,0,0.9);}
+
+.rightside h1 { font-size: 50px; font-weight: 900; margin-left: 20px; letter-spacing: 3px;}
 
 .rightside p { font-size: 1.2rem; padding: 30px 0; margin-left: 20px;}
 
-.rightside button { font-size: 17px; font-weight: bold; border-color: black; margin-left: 50px; color: black; background: transparent; border-radius: 40px; padding: 12px 18px; }
+.rightside button { font-size: 17px; font-weight: bold; border-color: black; margin-left: 20px; color: black; background: transparent; border-radius: 40px; padding: 12px 18px; }
 
-.rightside button:hover { color: white; background: rgb(25, 133, 109); }
+.rightside button:hover { color: white; background: rgb(25, 133, 109); transition: 0.4s ease; }
 
 .card {
     padding-bottom: 100px;
@@ -44,7 +48,7 @@ section { display: flex; padding-bottom: 150px; }
     grid-template-areas: "image" "text";
     border-style: solid;
     border-radius: 18px;
-    background: whitesmoke;
+    background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.5s ease;
@@ -92,9 +96,9 @@ section { display: flex; padding-bottom: 150px; }
   }
 
   .quiz {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 370px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text";
     border-style: solid;
@@ -120,21 +124,21 @@ section { display: flex; padding-bottom: 150px; }
 }
 .quiz-image2 {
     grid-area: image;
-    background: url("https://img1.looper.com/img/gallery/stranger-things-season-4-to-feature-four-brand-new-characters/intro-1572630160.jpg");
+    background: url("images/strangerthings.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
 }
 .quiz-image3 {
     grid-area: image;
-    background: url("https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80");
+    background: url("https://media.istockphoto.com/photos/closeup-of-red-cricket-ball-and-bat-sitting-on-grass-picture-id177427917?k=6&m=177427917&s=612x612&w=0&h=-q2U1BYuDKX2qQa7DcwTQ6PhkJifJcuuwo1HlpCjfC8=");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
 }
 .quiz-image4 {
     grid-area: image;
-    background: url("https://images.unsplash.com/photo-1551280857-2b9bbe52acf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background: url("https://images.unsplash.com/photo-1587329310686-91414b8e3cb7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -156,7 +160,7 @@ section { display: flex; padding-bottom: 150px; }
 
   .quiz-head h2 { margin-left: 50%; background: rgb(25, 133, 109); padding: 18px; margin-bottom: 20px; width: 100%; color: white; border-radius: 25px;}
 
-  .sports-head h2 { margin-left: 50%; background: rgb(25, 133, 109); padding: 18px; margin-bottom: 20px; width: 100%; color: white; border-radius: 25px;}
+  .sports-head h2{ margin-left: 50%; background: rgb(25, 133, 109); padding: 18px; margin-bottom: 20px; width: 100%; color: white; border-radius: 25px;}
 
   .footer { 
       background-image: url("http://cvitanic.info/wp-content/uploads/2016/05/Footer-background.jpg");
@@ -178,6 +182,7 @@ section { display: flex; padding-bottom: 150px; }
       background: rgb(51, 47, 56);
   }
 
+  .footer-content h2 { margin-left: 30px; letter-spacing: 4px; font-size: 1.8rem;}
 
   .footer-content p {
       text-align: center;
@@ -187,16 +192,17 @@ section { display: flex; padding-bottom: 150px; }
       display: block;
       text-align: center;
       font-size: 1em;
-      margin-bottom: 1px;
+      margin-bottom: 4px;
   }
 
   .links {
       text-align: center;
       font-size: 25px;
+      word-spacing: 15px;
   }
 
   .fa {
-    padding: 13px;
+    padding: 10px;
     font-size: 50px;
     text-decoration: none;
     color: white;
